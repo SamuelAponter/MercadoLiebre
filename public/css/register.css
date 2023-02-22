@@ -1,0 +1,102 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris--claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+.main__content-login{
+    min-width: 300px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--amarillo);
+}
+.main__form-container{
+    width: 300px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #00a875;
+}
+
+.intereses{
+    color: #00d997;
+    text-align: center;
+}
+.input{
+    width: 300px;
+    background-color: var(--gris--claro);
+    border:none;
+    border-radius: 8px;
+    height: 32px; 
+    font-size: var(--md);
+    padding: 6px;    
+    margin-bottom: 12px;
+    outline: none;
+}
+
+#domicilio{
+    margin-top: 30px;
+
+}
+.section__content-profile_selector{
+    font-size: 1.2rem;
+}
+.section__content-profile_selector input{
+    margin: 10px 10px;
+}
+.section__content-interest{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section__content-interest input{
+    width: 20px;
+    height:18px;
+    text-align: end;
+    
+}
+.intereses{
+    color: #00a875;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.section__content-interest p{
+    font-size: 1.2rem;
+}
+.interes{
+    display: flex;
+}
+.register__button{
+    background-color: #000000;
+    border-radius: 8px;
+    border: 5px solid var(--orange);
+    color: #ffffff;
+    width: 100%;    
+    height:40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: var(--md);
+    font-weight: bold;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"rel="stylesheet" />
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Registro Mercado Liebre</title>
+</head>
+<body>
+    <div class="main__content-login">
+        <form action="/" method="post" enctype="multipart/form-data" class="form">
+        <div class="main__form-container">
+                <div class="section__content-name-lastname">
+                    <label for="name" class="label">Nombre y Apellido</label>
+                    <input type="text" name= "nombreCompleto" placeholder="Samuel Aponte" class="input" id="name">
+                </div>
+                <div class="section__content-username">
+                    <label for="user" class="label">Nombre de usuario</label>
+                    <input type="text" name="usuario" placeholder="digital_example" class="input" id="user">
+                </div>
+                <div class="section__content-email">
+                    <label for="email" class="label">Email</label>
+                    <input type="email"name="" placeholder="digital@example.com" class="input" id="email">
+                </div>
+            </form>
+        <div class="section__content-born">
+                <label for="birthdate" class="label">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" class="input" >
+        </div>
+        <div class="section__content-domicilio">
+            <input type="text" placeholder="Domicilio" class="input" id="domicilio">
+        </div>
+        <div class="section__content-profile_selector">
+            <label for="selector" class="label">Perfil del usuario</label>
+            <br>
+                <input type="radio" name="perfil" value="1" class="comprador">Comprador
+                <input type="radio" name="perfil" value="2" class="vendedor">Vendedor
+        </div>
+            <br>
+        <div class="section__content-interest">
+            <label for="text" class="intereses">Intereses</label>
+            <p>Electro<input type="checkbox" name="intereses" class="interes"></p>
+            <p>Moda<input type="checkbox" name="intereses" class="interes"></p>
+            <p>Jugueteria<input type="checkbox" name="intereses" class="interes"></p>
+            <p>Hogar<input type="checkbox" name="intereses" class="interes"></p>
+            <p>Vida Sana<input type="checkbox" name="intereses" class="interes"></p>
+        </div>
+        <button class="register__button">Registrarme</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
