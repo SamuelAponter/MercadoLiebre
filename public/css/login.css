@@ -16,7 +16,7 @@
     font-family: 'Roboto', sans-serif;
 }
 header{
-    min-width: 360px;
+    min-width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ header{
 
 }
 .search-container input{
-    width: 80%;
+    width: 100%;
     height: 40px;
     border-radius: 7px;
     border-color: transparent;
@@ -108,7 +108,7 @@ nav ul i{
 }
 
 .main__content-login{
-    min-width: 360px;
+    min-width: 370px;
     width: 100%;
     padding: 50px 0;
     display: grid;
@@ -157,7 +157,7 @@ nav ul i{
 }
 .footer__container{
     background-color: var(--gris--claro);
-    min-width: 360px;
+    min-width: 370px;
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -208,12 +208,13 @@ nav ul i{
         .search-container{
             margin-right: 50px;
         }
+        #busqueda::placeholder{
+            visibility: hidden;
+        }
         .main-content img{
             width: 90%;
         }
-        .search-container input{
-            width: 100%;
-        }
+        
         .search-container i{
             display: none;
         }

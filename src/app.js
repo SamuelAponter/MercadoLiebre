@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(path.resolve(__dirname, '../public')))
+const port = process.env.PORT || 3001;
+
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 app.get('/', (req,res) =>{
@@ -18,4 +20,4 @@ app.get('*', (req, res) =>{
     res.status(404)
     res.send('Woops, no existe esta página!')
 })
-app.listen(8000, () => console.log('Servidor corriendo el el puerto 8000!'))
+app.listen(port, () => console.log('Servidor corriendo el el puerto 3001' ));
