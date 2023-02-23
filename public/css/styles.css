@@ -203,7 +203,8 @@ main img{
     min-width: 330px;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap ;
+    justify-content: center;
     padding: 2rem;
     background-color: var(--amarillo);
     }

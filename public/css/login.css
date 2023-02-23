@@ -160,8 +160,8 @@ nav ul i{
     min-width: 370px;
     display: flex;
     text-align: center;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap ;
+    justify-content:center;
     padding: 2rem;
     margin-top: 60px;
 
