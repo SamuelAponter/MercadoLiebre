@@ -88,6 +88,7 @@ nav ul i{
     cursor: pointer;
     min-width: 325px;
 }
+
 .burger-menu i{
     font-size: 3rem;
     color: #ffffff;
@@ -135,25 +136,40 @@ main img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
-
 .title__main h2{
     max-width: 500px;
     font-size:2rem;
     margin: 0 100px;
 }  
 
-.product {
+.product{
     display: flex;
     align-items: center;    
     justify-content: start; 
     flex-direction: column; 
     margin: 30px 30px;
     padding: 10px;
+    transition: transform 1s; 
+}
+.text-animation{
+    opacity: 0;
 }
 .product:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(1.2);
+}
+.product:hover .text-animation{
+    opacity: 1; 
+    transition: opacity 1s; 
+    font-weight: bold;
+}
+.product:hover .infoProduct i{
+    transform: rotate(-90deg);
+    transition: transform 1.6s;
+}
+.infoProduct i{
+    cursor: pointer;
 }
 .infoProduct{
     width: 100%;
@@ -172,13 +188,7 @@ main img{
     color: var(--verde);
     
 }
-.text-animation{
-    opacity: 0; 
-    transition: opacity 0.5s; 
-}
-.text-animation:hover{
-    opacity: 1;
-}
+
 .infoProduct i{
     left: 230px;
     bottom: 15px;
@@ -195,10 +205,7 @@ main img{
     right: 20px;
     top: -15px;
 }
-.infoProduct i:hover{
-    cursor: pointer;
-    transform: rotate(-90deg);
-}
+
 .footer__container{
     min-width: 330px;
     display: flex;
