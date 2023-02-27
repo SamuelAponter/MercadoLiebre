@@ -20,4 +20,7 @@ app.get('*', (req, res) =>{
     res.status(404)
     res.send('Woops, no existe esta página!')
 })
+app.post('/', (req, res) =>{
+    res.sendFile(path.resolve(__dirname, 'views/home.html'))
+})  
 app.listen(port, () => console.log('Servidor corriendo el el puerto 3001' ));
