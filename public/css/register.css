@@ -88,8 +88,19 @@ body{
 .interes{
     display: flex;
 }
-.register__button{
+.section__content-profile_pic{
+    margin-top: 20px;
+}
+.input-pic{
     background-color: #000000;
+    color: #ffffff;
+}
+.section__content-profile_pic input{
+    margin: 30px;
+    font-size: 1rem;
+}
+.register__button{
+    background-color: var(--verde);
     border-radius: 8px;
     border: 5px solid var(--orange);
     color: #ffffff;
@@ -99,4 +110,8 @@ body{
     margin-top: 10px;
     font-size: var(--md);
     font-weight: bold;
+}
+.register__button:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
 }
